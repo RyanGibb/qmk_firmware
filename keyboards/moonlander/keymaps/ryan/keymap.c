@@ -1,59 +1,16 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
-#include "keymap_german.h"
-#include "keymap_nordic.h"
-#include "keymap_french.h"
-#include "keymap_spanish.h"
-#include "keymap_hungarian.h"
-#include "keymap_swedish.h"
-#include "keymap_br_abnt2.h"
-#include "keymap_canadian_multilingual.h"
-#include "keymap_german_ch.h"
-#include "keymap_jp.h"
-#include "keymap_korean.h"
-#include "keymap_bepo.h"
-#include "keymap_italian.h"
-#include "keymap_slovenian.h"
-#include "keymap_lithuanian_azerty.h"
-#include "keymap_danish.h"
-#include "keymap_norwegian.h"
-#include "keymap_portuguese.h"
-#include "keymap_contributions.h"
-#include "keymap_czech.h"
-#include "keymap_romanian.h"
-#include "keymap_russian.h"
 #include "keymap_uk.h"
-#include "keymap_estonian.h"
-#include "keymap_belgian.h"
-#include "keymap_us_international.h"
-#include "keymap_croatian.h"
-#include "keymap_turkish_q.h"
-#include "keymap_slovak.h"
 #include "keymap_steno.h"
 
-#define KC_MAC_UNDO LGUI(KC_Z)
-#define KC_MAC_CUT LGUI(KC_X)
-#define KC_MAC_COPY LGUI(KC_C)
-#define KC_MAC_PASTE LGUI(KC_V)
 #define KC_PC_UNDO LCTL(KC_Z)
 #define KC_PC_CUT LCTL(KC_X)
 #define KC_PC_COPY LCTL(KC_C)
 #define KC_PC_PASTE LCTL(KC_V)
-#define ES_LESS_MAC KC_GRAVE
-#define ES_GRTR_MAC LSFT(KC_GRAVE)
-#define ES_BSLS_MAC ALGR(KC_6)
-#define NO_PIPE_ALT KC_GRAVE
-#define NO_BSLS_ALT KC_EQUAL
-#define LSA_T(kc) MT(MOD_LSFT | MOD_LALT, kc)
-#define BP_NDSH_MAC ALGR(KC_8)
-#define SE_SECT_MAC ALGR(KC_6)
-#define MOON_LED_LEVEL LED_LEVEL
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
 };
-
-
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
@@ -130,14 +87,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
-
-
 extern rgb_config_t rgb_matrix_config;
 
 void keyboard_post_init_user(void) {
   rgb_matrix_enable();
 }
-
 
 const uint8_t PROGMEM ledmap[][DRIVER_LED_TOTAL][3] = {
     [0] = { {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204}, {1,218,204} },
@@ -231,6 +185,3 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 }
-
-
-
