@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [7] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         DT_PRNT,        KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         DT_UP,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                DT_DOWN,        KC_NO,          KC_NO,          RGB_SAD,        RGB_SAI,        KC_NO,          KC_NO,
+    KC_NO,          KC_NO,          AC_ON,          AC_OFF,         AC_TOGG,        KC_NO,          KC_TRANSPARENT,                DT_DOWN,        KC_NO,          KC_NO,          RGB_SAD,        RGB_SAI,        KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                         KC_NO,          KC_NO,          RGB_HUD,        RGB_HUI,        KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          RGB_MOD,                       RGB_TOG,                        KC_NO,          KC_NO,          KC_NO,          KC_NO,          RESNO 
                                                                     RGB_VAD,        RGB_VAI,        TOGGLE_LAYER_COLOR,            RGB_SLD,        RGB_SPD,        RGB_SPI
