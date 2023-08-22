@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(8),                         KC_NO,          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_NO,
-    KC_NO,          MT(MOD_LGUI, KC_A),MT(MOD_LALT, KC_S),MT(MOD_LCTL, KC_D),MT(MOD_LSFT, KC_F),MT(MOD_RALT, KC_G),TG(7),          KC_NO,          MT(MOD_RALT, KC_H),MT(MOD_RSFT, KC_J),MT(MOD_RCTL, KC_K),MT(MOD_LALT, KC_L),MT(MOD_RGUI, KC_SCOLON),KC_NO,
+    KC_NO,MT(MOD_LGUI, KC_A),MT(MOD_LALT, KC_S),MT(MOD_LCTL, KC_D),MT(MOD_LSFT, KC_F),MT(MOD_RALT, KC_G),TG(7),                    KC_NO,MT(MOD_RALT, KC_H),MT(MOD_RSFT, KC_J),MT(MOD_RCTL, KC_K),MT(MOD_LALT, KC_L),MT(MOD_RGUI, KC_SCOLON),KC_NO,
     KC_NO,          KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          LT(6,KC_DELETE),                KC_NO,                         KC_NO,                          LT(4,KC_ESCAPE),KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     LT(1,KC_SPACE), LT(5,KC_TAB),   KC_NO,                         KC_NO,          LT(3,KC_ENTER), LT(2,KC_BSPACE)
