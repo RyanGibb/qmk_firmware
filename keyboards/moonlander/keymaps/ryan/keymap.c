@@ -3,11 +3,11 @@
 #include "keymap_uk.h"
 #include "keymap_steno.h"
 
-#define KC_PC_UNDO LCTL(KC_Z)
-#define KC_PC_REDO LCTL(KC_Y)
-#define KC_PC_CUT LCTL(KC_X)
-#define KC_PC_COPY LCTL(KC_C)
-#define KC_PC_PASTE LCTL(KC_V)
+#define KC_UNDO LCTL(KC_Z)
+#define KC_REDO LCTL(KC_Y)
+#define KC_CUT  LCTL(KC_X)
+#define KC_COPY LCTL(KC_C)
+#define KC_PSTE LCTL(KC_V)
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
@@ -19,24 +19,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(8),                         KC_NO,          KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_NO,
     KC_NO,          LGUI_T(KC_A),   LALT_T(KC_S),   LCTL_T(KC_D),   LSFT_T(KC_F),   RALT_T(KC_G),   TG(7),                         KC_NO,          RALT_T(KC_H),   RSFT_T(KC_J),   RCTL_T(KC_K),   LALT_T(KC_L),   RGUI_T(KC_SCOLON),KC_NO,
-    KC_NO,          KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_NO,
+    KC_NO,          KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          LT(6,KC_DEL),                   KC_NO,                         KC_NO,                          LT(4,KC_ESC),   KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     LT(1,KC_SPC),   LT(5,KC_TAB),   KC_NO,                         KC_NO,          LT(3,KC_ENT),   LT(2,KC_BSPC)
   ),
   // navigation
   [1] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_PC_REDO,     KC_PC_PASTE,    KC_PC_COPY,     KC_PC_CUT,      KC_PC_UNDO,     KC_NO,
-    KC_NO,          KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSHIFT,      KC_RALT,        KC_NO,                         KC_NO,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_CAPSLOCK,    KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                         KC_INSERT,      KC_HOME,        KC_PGUP,        KC_PGDOWN,      KC_END,         KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_REDO,        KC_PSTE,        KC_COPY,        KC_CUT,         KC_UNDO,        KC_NO,
+    KC_NO,          KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        KC_NO,                         KC_NO,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_CAPSLOCK,    KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                         KC_INS,         KC_HOME,        KC_PGUP,        KC_PGDOWN,      KC_END,         KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_NO,                         KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     KC_TRNS,        KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO
   ),
   // numbers
   [2] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_LBRACKET,    KC_7,           KC_8,           KC_9,           KC_RBRACKET,    KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          UK_GRV,         KC_4,           KC_5,           KC_6,           KC_EQUAL,       KC_NO,                         KC_NO,          KC_LALT,        KC_RSHIFT,      KC_RCTRL,       KC_LALT,        KC_RGUI,        KC_NO,
+    KC_NO,          KC_LBRC,        KC_7,           KC_8,           KC_9,           KC_RBRC,        KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
+    KC_NO,          UK_GRV,         KC_4,           KC_5,           KC_6,           KC_EQUAL,       KC_NO,                         KC_NO,          KC_LALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        KC_NO,
     KC_NO,          UK_HASH,        KC_1,           KC_2,           KC_3,           UK_BSLS,                                                       KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          UK_QUOT,                        KC_NO,                         KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     KC_0,           KC_MINUS,       KC_NO,                         KC_NO,          KC_NO,          KC_TRNS
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [3] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_LCBR,        KC_AMPR,        UK_ASTR,        KC_LPRN,        KC_RCBR,        KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          UK_NOT,         UK_DLR,         UK_PERC,        UK_CIRC,        UK_PLUS,        KC_NO,                         KC_NO,          KC_LALT,        KC_RSHIFT,      KC_RCTRL,       KC_LALT,        KC_RGUI,        KC_NO,
+    KC_NO,          UK_NOT,         UK_DLR,         UK_PERC,        UK_CIRC,        UK_PLUS,        KC_NO,                         KC_NO,          KC_LALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        KC_NO,
     KC_NO,          UK_TILD,        KC_EXLM,        UK_DQUO,        UK_PND,         UK_PIPE,                                                       KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          UK_AT,                          KC_NO,                         KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     KC_RPRN,        KC_UNDS,        KC_NO,                         KC_NO,          KC_TRNS,        KC_NO
@@ -53,8 +53,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // function
   [4] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_F12,         KC_F7,          KC_F8,          KC_F9,          KC_PSCREEN,     KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_F11,         KC_F4,          KC_F5,          KC_F6,          KC_APPLICATION, KC_NO,                         KC_NO,          KC_LALT,        KC_RSHIFT,      KC_RCTRL,       KC_LALT,        KC_RGUI,        KC_NO,
+    KC_NO,          KC_F12,         KC_F7,          KC_F8,          KC_F9,          KC_PSCR,        KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
+    KC_NO,          KC_F11,         KC_F4,          KC_F5,          KC_F6,          KC_APP,         KC_NO,                         KC_NO,          KC_LALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        KC_NO,
     KC_NO,          KC_F10,         KC_F1,          KC_F2,          KC_F3,          KC_NO,                                                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_NO,                         KC_NO,                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO
@@ -62,17 +62,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // mouse
   [5] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_PC_REDO,     KC_PC_PASTE,    KC_PC_COPY,     KC_PC_CUT,      KC_PC_UNDO,     KC_NO,
-    KC_NO,          KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSHIFT,      KC_RALT,        KC_NO,                         KC_NO,          KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_UP,       KC_MS_RIGHT,    KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                         KC_MS_WH_LEFT,  KC_MS_WH_DOWN,  KC_MS_WH_UP,    KC_MS_WH_RIGHT, KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_NO,                         KC_NO,                          KC_MS_BTN2,     KC_NO,          KC_NO,          KC_NO,          KC_NO,
-                                                                    KC_NO,          KC_TRNS,        KC_NO,                         KC_NO,          KC_MS_BTN3,     KC_MS_BTN1
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_REDO,        KC_PSTE,        KC_COPY,        KC_CUT,         KC_UNDO,        KC_NO,
+    KC_NO,          KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        KC_NO,                         KC_NO,          KC_MS_L,        KC_MS_D,        KC_MS_U,        KC_MS_R,        KC_NO,          KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                         KC_WH_L,        KC_WH_D,        KC_WH_U,        KC_WH_R,        KC_NO,          KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_NO,                         KC_NO,                          KC_BTN2,        KC_NO,          KC_NO,          KC_NO,          KC_NO,
+                                                                    KC_NO,          KC_TRNS,        KC_NO,                         KC_NO,          KC_MS_BTN3,     KC_BTN1
   ),
   // xf86
   [6] = LAYOUT_moonlander(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSHIFT,      KC_RALT,        KC_NO,                         KC_NO,          KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MPRV,        KC_NO,          KC_NO,
+    KC_NO,          KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        KC_NO,                         KC_NO,          KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MPRV,        KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                         KC_NO,          KC_BRID,        KC_BRIU,        KC_NO,          KC_NO,          KC_NO,
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                          KC_NO,                         KC_NO,                          KC_MUTE,        KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                     KC_NO,          KC_NO,          KC_NO,                         KC_NO,          KC_MSTP,        KC_MPLY
