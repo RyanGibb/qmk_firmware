@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     UK_GRV,         LGUI_T(KC_A),   LALT_T(KC_S),   LCTL_T(KC_D),   LSFT_T(KC_F),   RALT_T(KC_G),   TG(7),                         XXXXXXX,        RALT_T(KC_H),   RSFT_T(KC_J),   RCTL_T(KC_K),   LALT_T(KC_L),   RGUI_T(KC_SCOLON),UK_QUOT,
     UK_BSLS,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        UK_HASH,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        LT(6,KC_ESC),                   XXXXXXX,                       TT(4),                          LT(3,KC_DEL),   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-                                                                    LT(4,KC_SPC),   LT(5,KC_TAB),   XXXXXXX,                       TT(5),          LT(2,KC_ENT),   LT(1,KC_BSPC)
+                                                                    LT(4,KC_SPC),   LT(5,KC_TAB),   XXXXXXX,                       XXXXXXX,          LT(2,KC_ENT),   LT(1,KC_BSPC)
   ),
 
   // numbers
@@ -65,11 +65,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // mouse
   [5] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        KC_BSPC,        KC_DEL,         KC_PC_REDO,     XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_BTN1,        KC_BTN3,        KC_BTN2,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_BSPC,        KC_DEL,         KC_PC_REDO,     XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_MS_L,        KC_MS_D,        KC_MS_U,        KC_MS_R,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        KC_PC_UNDO,     KC_PC_CUT,      KC_PC_COPY,     KC_PC_PSTE,     XXXXXXX,                                                       KC_WH_L,        KC_WH_D,        KC_WH_U,        KC_WH_R,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-                                                                    XXXXXXX,        _______,        XXXXXXX,                       _______,        XXXXXXX,        XXXXXXX
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        KC_BTN3,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX, 
+                                                                    XXXXXXX,        _______,        XXXXXXX,                       XXXXXXX,        KC_BTN1,        KC_BTN2
   ),
   // xf86
   [6] = LAYOUT_moonlander(
