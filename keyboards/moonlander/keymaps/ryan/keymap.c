@@ -20,29 +20,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(8),                         XXXXXXX,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           XXXXXXX,
     XXXXXXX,        LGUI_T(KC_A),   LALT_T(KC_S),   LCTL_T(KC_D),   LSFT_T(KC_F),   RALT_T(KC_G),   TG(7),                         XXXXXXX,        RALT_T(KC_H),   RSFT_T(KC_J),   RCTL_T(KC_K),   LALT_T(KC_L),   RGUI_T(KC_SCOLON),XXXXXXX,
     XXXXXXX,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        LT(6,KC_DEL),                   XXXXXXX,                       XXXXXXX,                        LT(4,KC_ESC),   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-                                                                    LT(1,KC_SPC),   LT(5,KC_TAB),   XXXXXXX,                       XXXXXXX,        LT(3,KC_ENT),   LT(2,KC_BSPC)
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        LT(6,KC_DEL),                   XXXXXXX,                       XXXXXXX,                        LT(3,KC_ESC),   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+                                                                    LT(4,KC_SPC),   LT(5,KC_TAB),   XXXXXXX,                       XXXXXXX,        LT(2,KC_ENT),   LT(1,KC_BSPC)
   ),
-  // navigation
-  [1] = LAYOUT_moonlander(
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_PC_REDO,     KC_PC_PSTE,     KC_PC_COPY,     KC_PC_CUT,      KC_PC_UNDO,     XXXXXXX,
-    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_CAPSLOCK,    XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_INS,         KC_HOME,        KC_PGUP,        KC_PGDOWN,      KC_END,         XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-                                                                    _______,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
-  ),
+
   // numbers
-  [2] = LAYOUT_moonlander(
+  [1] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        KC_LBRC,        KC_7,           KC_8,           KC_9,           KC_RBRC,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        UK_GRV,         KC_4,           KC_5,           KC_6,           KC_EQUAL,       XXXXXXX,                       XXXXXXX,        KC_LALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        XXXXXXX,
     XXXXXXX,        UK_HASH,        KC_1,           KC_2,           KC_3,           UK_BSLS,                                                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        UK_QUOT,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     KC_0,           KC_MINUS,       XXXXXXX,                       XXXXXXX,        XXXXXXX,        _______
-         ),
+  ),
   // symbols
-  [3] = LAYOUT_moonlander(
+  [2] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        KC_LCBR,        KC_AMPR,        UK_ASTR,        KC_LPRN,        KC_RCBR,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        UK_NOT,         UK_DLR,         UK_PERC,        UK_CIRC,        UK_PLUS,        XXXXXXX,                       XXXXXXX,        KC_LALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        XXXXXXX,
@@ -51,13 +43,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                     KC_RPRN,        KC_UNDS,        XXXXXXX,                       XXXXXXX,        _______,        XXXXXXX
   ),
   // function
-  [4] = LAYOUT_moonlander(
+  [3] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        KC_F12,         KC_F7,          KC_F8,          KC_F9,          KC_PSCR,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        KC_F11,         KC_F4,          KC_F5,          KC_F6,          KC_APP,         XXXXXXX,                       XXXXXXX,        KC_LALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        XXXXXXX,
     XXXXXXX,        KC_F10,         KC_F1,          KC_F2,          KC_F3,          XXXXXXX,                                                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
+  ),
+
+  // navigation
+  [4] = LAYOUT_moonlander(
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_PC_REDO,     KC_PC_PSTE,     KC_PC_COPY,     KC_PC_CUT,      KC_PC_UNDO,     XXXXXXX,
+    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_CAPSLOCK,    XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_INS,         KC_HOME,        KC_PGUP,        KC_PGDOWN,      KC_END,         XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+                                                                    _______,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
   // mouse
   [5] = LAYOUT_moonlander(
@@ -77,6 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        KC_MUTE,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_MSTP,        KC_MPLY
   ),
+
   // board
   [7] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       DT_PRNT,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
