@@ -21,24 +21,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     UK_GRV,         LGUI_T(KC_A),   LALT_T(KC_S),   LCTL_T(KC_D),   LSFT_T(KC_F),   RALT_T(KC_G),   TG(7),                         XXXXXXX,        RALT_T(KC_H),   RSFT_T(KC_J),   RCTL_T(KC_K),   LALT_T(KC_L),   RGUI_T(KC_SCOLON),UK_QUOT,
     UK_BSLS,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        UK_HASH,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        LT(6,KC_ESC),                   XXXXXXX,                       TT(4),                          LT(3,KC_DEL),   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-                                                                    LT(4,KC_SPC),   LT(5,KC_TAB),   XXXXXXX,                       XXXXXXX,          LT(2,KC_ENT),   LT(1,KC_BSPC)
+                                                                    LT(4,KC_SPC),   LT(5,KC_TAB),   XXXXXXX,                       XXXXXXX,          LT(2,KC_ENT), LT(1,KC_BSPC)
   ),
 
   // numbers
   [1] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        UK_ASTR,        KC_7,           KC_8,           KC_9,           KC_0,           XXXXXXX,
-    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_MINUS,       KC_4,           KC_5,           KC_6,           KC_EQUAL,       S(KC_EQUAL),
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_DOT,         KC_1,           KC_2,           KC_3,           KC_SLSH,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        UK_ASTR,        KC_7,           KC_8,           KC_9,           KC_SLSH,        XXXXXXX,
+    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_MINUS,       KC_4,           KC_5,           KC_6,           KC_0,           XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_DOT,         XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        _______
   ),
   // symbols
   [2] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        S(UK_ASTR),     S(KC_7),        S(KC_8),        S(KC_9),        S(KC_0),        XXXXXXX,
-    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        S(KC_MINUS),    S(KC_4),        S(KC_5),        S(KC_6),        S(KC_EQUAL),    XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       S(KC_DOT),      S(KC_1),        S(KC_2),        S(KC_3),        S(KC_SLSH),     XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        S(UK_ASTR),     S(KC_7),        S(KC_8),        S(KC_9),        S(KC_SLSH),     XXXXXXX,
+    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        S(KC_MINUS),    S(KC_4),        S(KC_5),        S(KC_6),        S(KC_0),        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       S(KC_EQUAL),    S(KC_1),        S(KC_2),        S(KC_3),        S(KC_DOT),      XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        _______,        XXXXXXX
   ),
