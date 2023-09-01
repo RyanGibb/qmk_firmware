@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // numbers
   [1] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        UK_ASTR,        KC_7,           KC_8,           KC_9,           KC_SLSH,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_7,           KC_8,           KC_9,           KC_SLSH,        XXXXXXX,
     XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_MINUS,       KC_4,           KC_5,           KC_6,           KC_0,           XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_DOT,         XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // symbols
   [2] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        S(UK_ASTR),     S(KC_7),        S(KC_8),        S(KC_9),        S(KC_SLSH),     XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        S(KC_7),        S(KC_8),        S(KC_9),        S(KC_SLSH),     XXXXXXX,
     XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        S(KC_MINUS),    S(KC_4),        S(KC_5),        S(KC_6),        S(KC_0),        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       S(KC_EQUAL),    S(KC_1),        S(KC_2),        S(KC_3),        S(KC_DOT),      XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_INS,         KC_CAPSLOCK,    CAPS_WORD,      KC_APP,         KC_SCRL,        XXXXXXX,
     XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTRL,       KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_PSCR,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_HOME,        KC_PGUP,        KC_PGDOWN,      KC_END,         KC_PAUS,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_HOME,        KC_PGDOWN,      KC_PGUP,      KC_END,         KC_PAUS,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       _______,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     _______,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [6] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        KC_BRID,        KC_BRIU,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MPRV,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_RALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MPRV,        XXXXXXX,                       XXXXXXX,        KC_RALT,        KC_RSFT,        KC_RCTRL,       KC_LALT,        KC_RGUI,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        KC_MSTP,        KC_MPLY,        KC_MUTE,        XXXXXXX,                                                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
