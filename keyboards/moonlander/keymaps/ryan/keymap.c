@@ -17,7 +17,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // base
   [0] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    KC_LBRC,        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(8),                         XXXXXXX,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_RBRC,
+    KC_EQUAL,       KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(8),                         XXXXXXX,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_MINUS,
     UK_GRV,         LGUI_T(KC_A),   LALT_T(KC_S),   LCTL_T(KC_D),   LSFT_T(KC_F),   RALT_T(KC_G),   TG(7),                         XXXXXXX,        RALT_T(KC_H),   RSFT_T(KC_J),   RCTL_T(KC_K),   LALT_T(KC_L),   RGUI_T(KC_COLON),UK_QUOT,
     UK_BSLS,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        UK_HASH,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        LT(6,KC_ESC),                   XXXXXXX,                       TT(4),                          LT(3,KC_DEL),   XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
@@ -27,27 +27,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // numbers
   [1] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_7,           KC_8,           KC_9,           KC_SLSH,        XXXXXXX,
-    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_MINUS,       KC_4,           KC_5,           KC_6,           KC_0,           XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_DOT,         XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_7,           KC_8,           KC_9,           XXXXXXX,        XXXXXXX,
+    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_LBRC,        KC_4,           KC_5,           KC_6,           KC_0,           XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_RBRC,        KC_1,           KC_2,           KC_3,           XXXXXXX,         XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        _______
   ),
   // symbols
   [2] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        S(KC_7),        S(KC_8),        S(KC_9),        S(KC_SLSH),     XXXXXXX,
-    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        S(KC_MINUS),    S(KC_4),        S(KC_5),        S(KC_6),        S(KC_0),        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       S(KC_EQUAL),    S(KC_1),        S(KC_2),        S(KC_3),        S(KC_DOT),      XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        S(KC_7),        S(KC_8),        S(KC_9),        S(KC_0),        XXXXXXX,
+    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        S(KC_LBRC),     S(KC_4),        S(KC_5),        S(KC_6),        S(KC_0),        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       S(KC_RBRC),     S(KC_1),        S(KC_2),        S(KC_3),        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        _______,        XXXXXXX
   ),
   // function
   [3] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_F12,         KC_F7,          KC_F8,          KC_F9,          XXXXXXX,        XXXXXXX,
-    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        KC_F11,         KC_F4,          KC_F5,          KC_F6,          XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_F10,         KC_F1,          KC_F2,          KC_F3,          XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_F7,          KC_F8,          KC_F9,          KC_F12,         XXXXXXX,
+    XXXXXXX,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,        KC_RALT,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_F4,          KC_F5,          KC_F6,          KC_F11,         XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F10,         XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        _______,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
