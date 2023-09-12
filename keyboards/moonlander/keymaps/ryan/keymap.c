@@ -32,32 +32,32 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        _______,                       _______,        XXXXXXX,        XXXXXXX
   ),
-  // mouse
+  // numpad
   [2] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_7,           KC_8,           KC_9,           KC_MINUS,       XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       XXXXXXX,        XXXXXXX,        KC_4,           KC_5,           KC_6,           S(KC_EQUAL),    XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       XXXXXXX,        KC_1,           KC_2,           KC_3,           KC_SLSH,        XXXXXXX,
+    XXXXXXX,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        KC_0,           XXXXXXX,        KC_DOT,         S(KC_8),        XXXXXXX,
+                                                                    XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        _______,        _______
+  ),
+  // mouse
+  [3] = LAYOUT_moonlander(
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       XXXXXXX,        KC_MS_L,        KC_MS_D,        KC_MS_U,        KC_MS_R,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_MS_L,        KC_MS_D,        KC_MS_U,        KC_MS_R,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       KC_WH_L,        KC_WH_D,        KC_WH_U,        KC_WH_R,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        XXXXXXX,                       XXXXXXX,                        KC_BTN3,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_BTN2,        KC_BTN1
   ),
   // board
-  [3] = LAYOUT_moonlander(
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       DT_PRNT,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       DT_UP,          XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+  [4] = LAYOUT_moonlander(
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       DT_PRNT,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       DT_UP,          XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        AC_ON,          AC_OFF,         AC_TOGG,        XXXXXXX,        XXXXXXX,                       DT_DOWN,        XXXXXXX,        XXXXXXX,        RGB_SAD,        RGB_SAI,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                                                       XXXXXXX,        XXXXXXX,        RGB_HUD,        RGB_HUI,        XXXXXXX,        XXXXXXX,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                        RGB_MOD,                       RGB_TOG,                        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        QK_BOOT,
                                                                     RGB_VAD,        RGB_VAI,        TOGGLE_LAYER_COLOR,            RGB_SLD,        RGB_SPD,        RGB_SPI
-  ),
-  // steno
-  [4] = LAYOUT_moonlander(
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        _______,                       QK_STENO_GEMINI,STN_FN,         STN_RES1,       STN_RES2,       XXXXXXX,        XXXXXXX,        STN_PWR,
-    XXXXXXX,        STN_N1,         STN_N2,         STN_N3,         STN_N4,         STN_N5,         XXXXXXX,                       QK_STENO_BOLT,  STN_N6,         STN_N7,         STN_N8,         STN_N9,         STN_NA,         STN_NB,
-    XXXXXXX,        STN_S1,         STN_TL,         STN_PL,         STN_HL,         STN_ST1,        XXXXXXX,                       XXXXXXX,        STN_ST3,        STN_FR,         STN_PR,         STN_LR,         STN_TR,         STN_DR,
-    XXXXXXX,        STN_S2,         STN_KL,         STN_WL,         STN_RL,         STN_ST2,                                                       STN_ST4,        STN_RR,         STN_BR,         STN_GR,         STN_SR,         STN_ZR,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        STN_NC,                         XXXXXXX,                       XXXXXXX,                        STN_NC,         XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-                                                                    STN_A,          STN_O,          XXXXXXX,                       XXXXXXX,        STN_E,          STN_U
   ),
 };
 
