@@ -240,3 +240,54 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 }
+
+#if defined(MOONLANDER_USER_LEDS)
+layer_state_t layer_state_set_kb(layer_state_t state) {
+    state = layer_state_set_user(state);
+    bool LED_1 = false;
+    bool LED_2 = false;
+    bool LED_3 = false;
+    bool LED_4 = false;
+    bool LED_5 = false;
+#if !defined(CAPS_LOCK_STATUS)
+    bool LED_6 = false;
+#endif
+
+    uint8_t layer = get_highest_layer(state);
+    switch (layer) {
+        case 1:
+            LED_1 = true;
+            break;
+        case 2:
+            LED_2 = true;
+            break;
+        case 3:
+            LED_3 = true;
+            break;
+        case 4:
+            LED_4 = true;
+            break;
+        case 5:
+            LED_5 = true;
+            break;
+        case 6:
+#if !defined(CAPS_LOCK_STATUS)
+            LED_6 = true;
+#endif
+            break;
+        default:
+            break;
+    }
+
+    ML_LED_1(LED_1);
+    ML_LED_2(LED_2);
+    ML_LED_3(LED_3);
+    ML_LED_4(LED_4);
+    ML_LED_5(LED_5);
+#if !defined(CAPS_LOCK_STATUS)
+    ML_LED_6(LED_6);
+#endif
+
+    return state;
+}
+#endif
