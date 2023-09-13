@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,         KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_MINUS,                      KC_EQUAL,       KC_H,           KC_J,           KC_K,           KC_L,           KC_SEMICOLON,   UK_QUOT,
     UK_BSLS,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        UK_HASH,
     OSL(1),         KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,                        TG(2),                         TG(3),                          KC_RSFT,        KC_RCTL,        KC_RALT,        KC_RGUI,        OSL(1),
-                                                                    KC_SPC,         KC_TAB,         TG(1),                         TG(1),          KC_ENT,         KC_BSPC
+                                                                    LT(1,KC_SPC),   KC_TAB,         TG(1),                         TG(1),          KC_ENT,         LT(1,KC_BSPC)
   ),
   // raise
   [1] = LAYOUT_moonlander(
