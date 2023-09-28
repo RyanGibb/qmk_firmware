@@ -26,9 +26,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // raise
   [1] = LAYOUT_moonlander(
     XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_F11,                        KC_F12,         KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         XXXXXXX,
-    XXXXXXX,        XXXXXXX,        XXXXXXX,        KC_BRID,        KC_BRIU,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_PSCR,        KC_HOME,        KC_END,         KC_APP,         KC_LBRC,        KC_RBRC,
-    XXXXXXX,        XXXXXXX,        KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MNXT,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       S(KC_9),        S(KC_0),
-    KC_MSTP,        XXXXXXX,        XXXXXXX,        KC_MPLY,        KC_MUTE,        XXXXXXX,                                                       KC_CAPS_LOCK,   CW_TOGG,        KC_MINUS,       KC_EQUAL,       S(KC_LBRC),     S(KC_RBRC),
+    XXXXXXX,        KC_LBRC,        XXXXXXX,        KC_BRID,        KC_BRIU,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_PSCR,        KC_HOME,        KC_END,         KC_APP,         KC_RBRC,        XXXXXXX,
+    XXXXXXX,        S(KC_9),        KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MNXT,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       S(KC_0),        XXXXXXX,
+    KC_MSTP,        S(KC_LBRC),     XXXXXXX,        KC_MPLY,        KC_MUTE,        XXXXXXX,                                                       KC_CAPS_LOCK,   CW_TOGG,        KC_MINUS,       KC_EQUAL,       S(KC_RBRC),     XXXXXXX,
     XXXXXXX,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
