@@ -27,8 +27,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT_moonlander(
     XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          XXXXXXX,                       XXXXXXX,        KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
     XXXXXXX,        XXXXXXX,        XXXXXXX,        KC_BRID,        KC_BRIU,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        KC_PGUP,        KC_HOME,        KC_END,         KC_PGDN,        KC_PSCR,        KC_F12,
-    XXXXXXX,        XXXXXXX,        KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MNXT,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        KC_MSTP,        KC_MPLY,        KC_MUTE,        XXXXXXX,                                                       XXXXXXX,        CW_TOGG,        KC_CAPS_LOCK,   KC_APP,         XXXXXXX,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_MPRV,        KC_VOLD,        KC_VOLU,        KC_MNXT,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       XXXXXXX,        KC_SCRL,
+    XXXXXXX,        XXXXXXX,        KC_MSTP,        KC_MPLY,        KC_MUTE,        XXXXXXX,                                                       XXXXXXX,        CW_TOGG,        KC_CAPS_LOCK,   KC_APP,         KC_INS,         KC_PAUS,
     XXXXXXX,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        XXXXXXX,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
