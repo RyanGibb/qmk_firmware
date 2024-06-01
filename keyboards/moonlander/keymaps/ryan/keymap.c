@@ -16,8 +16,8 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // base
   [0] = LAYOUT_moonlander(
-    KC_VOLU,        KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           TG(3),                         TG(5),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_BRIU,
-    KC_VOLD,        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(2),                         XXXXXXX,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BRID,
+    KC_MINUS,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           TG(3),                         TG(5),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_EQUAL,
+    KC_LBRC,        KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           TG(2),                         XXXXXXX,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_RBRC,
     UK_GRV,         KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           TG(1),                         TG(4),          KC_H,           KC_J,           KC_K,           KC_L,           KC_SEMICOLON,   UK_QUOT,
     UK_BSLS,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                          KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLSH,        UK_HASH,
     KC_RALT,        KC_LGUI,        KC_LALT,        KC_LCTL,        KC_LSFT,                        KC_ESC,                        KC_DEL,                         KC_RSFT,        KC_RCTL,        KC_LALT,        KC_RGUI,        KC_RALT,
@@ -26,19 +26,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // raise
   [1] = LAYOUT_moonlander(
     XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          XXXXXXX,                       XXXXXXX,        KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
-    KC_INS,         XXXXXXX,        XXXXXXX,        S(KC_LBRC),     S(KC_RBRC),     XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_PGDN,        KC_PGUP,        XXXXXXX,        KC_PSCR,        KC_F12,
-    KC_SCRL,        KC_MPRV,        KC_MNXT,        KC_LBRC,        KC_RBRC,        XXXXXXX,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       CW_TOGG,        XXXXXXX,
-    KC_PAUS,        KC_MPLY,        KC_MUTE,        KC_MINUS,       KC_EQUAL,       XXXXXXX,                                                       XXXXXXX,        KC_HOME,        KC_END,         KC_APP,         KC_CAPS_LOCK,   XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_PAUS,        KC_SCRL,        KC_INS,         XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_PGDN,        KC_PGUP,        XXXXXXX,        KC_PSCR,        KC_F12,
+    XXXXXXX,        XXXXXXX,        KC_MUTE,        KC_VOLD,        KC_VOLU,        XXXXXXX,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       CW_TOGG,        XXXXXXX,
+    XXXXXXX,        XXXXXXX,        KC_MPLY,        KC_MPRV,        KC_MNXT,        XXXXXXX,                                                       XXXXXXX,        KC_HOME,        KC_END,         KC_APP,         KC_CAPS_LOCK,   XXXXXXX,
     _______,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        _______,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
   // numpad
   [2] = LAYOUT_moonlander(
-    _______,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,        XXXXXXX,
-    _______,        _______,        _______,        _______,        _______,        _______,        _______,                       XXXXXXX,        XXXXXXX,        KC_7,           KC_8,           KC_9,           S(KC_EQUAL),    XXXXXXX,
-    _______,        _______,        _______,        _______,        _______,        _______,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_4,           KC_5,           KC_6,           KC_MINUS,       _______,
-    _______,        _______,        _______,        _______,        _______,        _______,                                                       XXXXXXX,        KC_1,           KC_2,           KC_3,           KC_SLSH,        XXXXXXX,
-    _______,        _______,        _______,        _______,        _______,                        _______,                       _______,                        KC_0,           KC_COMMA,       KC_DOT,         S(KC_8),        XXXXXXX,
+    _______,        _______,        _______,        _______,        _______,        _______,        XXXXXXX,                       XXXXXXX,        _______,        _______,        _______,        _______,        _______,        XXXXXXX,
+    _______,        _______,        _______,        _______,        _______,        _______,        _______,                       XXXXXXX,        _______,        KC_7,           KC_8,           KC_9,           S(KC_EQUAL),    _______,
+    _______,        _______,        _______,        _______,        _______,        _______,        XXXXXXX,                       XXXXXXX,        _______,        KC_4,           KC_5,           KC_6,           KC_MINUS,       _______,
+    _______,        _______,        _______,        _______,        _______,        _______,                                                       _______,        KC_1,           KC_2,           KC_3,           KC_SLSH,        _______,
+    _______,        _______,        _______,        _______,        _______,                        _______,                       _______,                        KC_0,           KC_COMMA,       KC_DOT,         S(KC_8),        _______,
                                                                     _______,        _______,        _______,                       _______,        _______,        _______
   ),
   // mouse
