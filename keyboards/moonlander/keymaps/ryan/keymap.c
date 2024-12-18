@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          XXXXXXX,                       XXXXXXX,        KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
     XXXXXXX,        XXXXXXX,        KC_PAUS,        KC_SCRL,        KC_INS,         XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        KC_PGDN,        KC_PGUP,        XXXXXXX,        KC_PSCR,        KC_F12,
     XXXXXXX,        XXXXXXX,        KC_MUTE,        KC_VOLD,        KC_VOLU,        XXXXXXX,        _______,                       XXXXXXX,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       CW_TOGG,        XXXXXXX,
-    XXXXXXX,        XXXXXXX,        KC_MPLY,        KC_MPRV,        KC_MNXT,        XXXXXXX,                                                       XXXXXXX,        KC_HOME,        KC_END,         KC_APP,         KC_CAPS_LOCK,   XXXXXXX,
+    XXXXXXX,        KC_MSTP,        KC_MPLY,        KC_MPRV,        KC_MNXT,        XXXXXXX,                                                       XXXXXXX,        KC_HOME,        KC_END,         KC_APP,         KC_CAPS_LOCK,   XXXXXXX,
     _______,        _______,        _______,        _______,        _______,                        XXXXXXX,                       XXXXXXX,                        _______,        _______,        _______,        _______,        _______,
                                                                     XXXXXXX,        XXXXXXX,        XXXXXXX,                       XXXXXXX,        XXXXXXX,        XXXXXXX
   ),
@@ -106,7 +106,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
   },
   [1] = {
-    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    {1,218,204},
+    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
@@ -115,7 +115,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     BASE_COLOUR,    BASE_COLOUR,    {1,218,204},
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
 
-    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    {1,218,204},
+    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
     BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,    BASE_COLOUR,
